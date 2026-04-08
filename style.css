@@ -22,11 +22,11 @@ body {
     background-color: var(--white);
 }
 
-/* Header & Overlay */
+/* Header e Overlay */
 .main-header {
     height: 50vh;
-    background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920') no-repeat center center/cover;
-    position: relative;
+    background: no-repeat center center/cover; image-rendering: auto;
+	position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
     padding: 60px 20px;
 }
 
-/* Intro Text Section */
+/* Sezione Intro Text */
 
 .intro-text{
 	background-color: #f0f7f4; /*var(--soft-grain)*/
@@ -87,7 +87,7 @@ body {
     text-align: justify;
 }
 
-/* Download Section */
+/* Sezione Download */
 .download-section {
     background-color: #A2D9CE; /*var(--mint-sorbet);*/
     padding: 80px 20px;
@@ -106,6 +106,19 @@ body {
     margin-bottom: 50px;
     color: var(--leaf-green);
     font-weight: bold;
+}
+
+/* CSS relativo alle immagini */
+
+.image-auto {
+  height: 100px;
+  width: 100px;
+  image-rendering: auto;
+}
+
+.crisp-edges {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* Grid layout */
